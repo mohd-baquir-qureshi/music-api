@@ -11,7 +11,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 #### Search Song
 
-```http
+```
   GET https://musicapi.x007.workers.dev/search
 ```
 
@@ -22,7 +22,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 #### Search Song Example
 
-```http
+```
   GET https://musicapi.x007.workers.dev/search?q=Pathaan&searchEngine=gaama
 ```
 
@@ -45,7 +45,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 #### Fetch Song
 
-```http
+```
   GET https://musicapi.x007.workers.dev/fetch
 ```
 
@@ -56,7 +56,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 #### Fetch Song Example (Gaama) HLS Stream Link
 
-```http
+```
   GET https://musicapi.x007.workers.dev/fetch?id=e9b525b48070ce18657a03a7be249d0c96b18bf012ba2ce87f33097dd45b8a4047f5b7c16dd94923040fbb5b4d83ee46
 ```
 
@@ -74,7 +74,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 #### Fetch Song Example (Other Search Engines) Direct Mp3 File
 
-```http
+```
   GET https://musicapi.x007.workers.dev/fetch?id=205659dc7589f400defc73f6918b369759cd3b88cfaef01c5af3c98af7e10d683d55756d7191f1217deea14ee68a618ca8aba082073c68e1b8bef0b3aa416375
 ```
 
