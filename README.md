@@ -18,7 +18,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `q` | `string` | **Required**. Song Name |
-| `searchEngine` | `string` | **Required**. Music Search Engine Name (Available Search Engine Names - gaama,seevn,hunjama,mtmusic,wunk,hemaroo) |
+| `searchEngine` | `string` | **Required**. Music Search Engine Name (Available Search Engine Names - gaama,seevn,hunjama,mtmusic,wunk) |
 
 #### Search Song Example
 
@@ -73,7 +73,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 ```json
 {
     "status": 200,
-    "response": "<p><p>Tumne Mohabbat Karni Hai</p></p><p><p>Humne Mohabbat Ki Hai</p></p><p><p>Iss Dil Ke Alawa Kisi Se Bhi</p></p><p><p>Na Humne Ijaazat Li Hai</p></p><p><p>Hunar Hai Yeh Bhi Ishq Ka</p></p><p><p>Kisi Kisi Ko Aata Hai</p></p><p><p>Jaan Loota Ke Dushman Ki</p></p><p><p>Humne Hifazat Ki Hai</p></p><p><p>Baat Karte Hain Hazaron</p></p><p><p>Hazaron</p></p><p><p>Hai Tajurba Humein Yaaron</p></p><p><p>Haan Yaaron</p></p><p><p>Baat Karte Hain Hazaron</p></p><p><p>Hai Tajurba Hamein Yaaron</p></p><p><p>Aisi Hai Ada</p></p><p><p>Bandh Loon Hawa</p></p><p><p>Mujhpe Woh Khuda</p></p><p><p>Dil Se Dua Barsaye</p></p><p><p>Jhoome Jo Pathaan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Jhoome Jo Pathan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Follow Me In SingSpot 1312526</p></p><p><p>Muqabla Kaise</p></p><p><p>Hum Karte Hain Yaar</p></p><p><p>Abki Baar Tarika Hum Batayenge</p></p><p><p>Tarika Hum Batayenge</p></p><p><p>Kaise Dushman Pe</p></p><p><p>Hum Marte Hain Yaar</p></p><p><p>Abki Baar Tarika Hum Batayenge</p></p><p><p>Tarika Hum Batayenge</p></p><p><p>Yaar Karde Jo Ishaara</p></p><p><p>Ishaara</p></p><p><p>Dil Main De Doon Dobara</p></p><p><p>Dobara</p></p><p><p>Yaar Karde Jo Ishaara</p></p><p><p>Dil Main De Doon Dobara</p></p><p><p>Pyar Ka Nasha</p></p><p><p>Aisa Hai Chadha</p></p><p><p>Hoke Yoon Fida</p></p><p><p>Dushman Gale Lag Jaaye</p></p><p><p>Jhoome Jo Pathaan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Jhoome Jo Pathan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>&nbsp;</p></p>",
+    "response": "<p><p>Tumne Mohabbat Karni Hai</p></p><p><p>Humne Mohabbat Ki Hai</p></p><p>......",
     "message": "success"
 }
 ```
