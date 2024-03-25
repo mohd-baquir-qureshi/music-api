@@ -18,7 +18,7 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `q` | `string` | **Required**. Song Name |
-| `searchEngine` | `string` | **Required**. Music Search Engine Name (Available Search Engine Names - gaama,seevn,hunjama,mtmusic,wunk,ressa,hemaroo) |
+| `searchEngine` | `string` | **Required**. Music Search Engine Name (Available Search Engine Names - gaama,seevn,hunjama,mtmusic,wunk,hemaroo) |
 
 #### Search Song Example
 
@@ -28,18 +28,53 @@ This is a free unofficial API to Search and Stream High Quality (320kbps) music 
 
 ```json
 {
-	"status": 200,
-	"response": [{
-		"id": "aeed2c96e7313c3a10c3ef220b768d11d90bd7e6f2c542d651c07d2ac205e08634290fd2c4b90bc221775bed81b9f037",
-		"title": "Pathaan’s Theme"
-	}, {
-		"id": "e9b525b48070ce18657a03a7be249d0c96b18bf012ba2ce87f33097dd45b8a4047f5b7c16dd94923040fbb5b4d83ee46",
-		"title": "Jhoome Jo Pathaan"
-	}, {
-		"id": "d3d6845ce2fe5b995b6065ad968f8f5ef7e17c125069fdb37be663658980cab513b667a64d80521954a3665fa15ef5b2",
-		"title": "Besharam Rang"
-	}],
-	"message": "success"
+    "status": 200,
+    "response": [
+        {
+            "id": "e9b525b48070ce18657a03a7be249d0c96b18bf012ba2ce87f33097dd45b8a4047f5b7c16dd94923040fbb5b4d83ee46",
+            "title": "Jhoome Jo Pathaan",
+            "img": "https://hls-server.vercel.app/img/fd05eacd27592b53153fc715257ddf3fe71a60eb063e4975190df148dafd38e0c5b1d1fc5e9e1a8d78a0e601e775b2780e561e59a61f94b20e0ef4e599f7da999c57233ac8921a96cba8b23d52be0344"
+        },
+        {
+            "id": "aeed2c96e7313c3a10c3ef220b768d11d90bd7e6f2c542d651c07d2ac205e08634290fd2c4b90bc221775bed81b9f037",
+            "title": "Pathaan’s Theme",
+            "img": "https://hls-server.vercel.app/img/fd05eacd27592b53153fc715257ddf3fe71a60eb063e4975190df148dafd38e0c5b1d1fc5e9e1a8d78a0e601e775b2780e561e59a61f94b20e0ef4e599f7da999c57233ac8921a96cba8b23d52be0344"
+        },
+        {
+            "id": "3be37852a755fe94e41199e1e715a84c639dc9af30f9d992645418cd00d746061493acc356e1b8ac2d28fee430844602",
+            "title": "Besharam Rang (From \"Pathaan\")",
+            "img": "https://hls-server.vercel.app/img/fd05eacd27592b53153fc715257ddf3fe71a60eb063e4975190df148dafd38e0667da290b1493560f4e7a5233872210b4a53693dc9102a43df4e5cfdc7112d85cc34ebac5af4de99d58c36fcad6618fb"
+        }
+    ],
+    "message": "success"
+}
+```
+
+#### Get Song Lyrics
+
+```
+  GET https://musicapi.x007.workers.dev/lyrics
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Song ID Fetched from Search Response |
+
+---
+###### **NOTE:** It is Only for Gaama search engine, and it is in Beta Mode, so it might not work for some songs.
+ ---
+
+#### Get Song Lyrics Example
+
+```
+  GET https://musicapi.x007.workers.dev/lyrics?id=e9b525b48070ce18657a03a7be249d0c96b18bf012ba2ce87f33097dd45b8a4047f5b7c16dd94923040fbb5b4d83ee46
+```
+
+```json
+{
+    "status": 200,
+    "response": "<p><p>Tumne Mohabbat Karni Hai</p></p><p><p>Humne Mohabbat Ki Hai</p></p><p><p>Iss Dil Ke Alawa Kisi Se Bhi</p></p><p><p>Na Humne Ijaazat Li Hai</p></p><p><p>Hunar Hai Yeh Bhi Ishq Ka</p></p><p><p>Kisi Kisi Ko Aata Hai</p></p><p><p>Jaan Loota Ke Dushman Ki</p></p><p><p>Humne Hifazat Ki Hai</p></p><p><p>Baat Karte Hain Hazaron</p></p><p><p>Hazaron</p></p><p><p>Hai Tajurba Humein Yaaron</p></p><p><p>Haan Yaaron</p></p><p><p>Baat Karte Hain Hazaron</p></p><p><p>Hai Tajurba Hamein Yaaron</p></p><p><p>Aisi Hai Ada</p></p><p><p>Bandh Loon Hawa</p></p><p><p>Mujhpe Woh Khuda</p></p><p><p>Dil Se Dua Barsaye</p></p><p><p>Jhoome Jo Pathaan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Jhoome Jo Pathan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Follow Me In SingSpot 1312526</p></p><p><p>Muqabla Kaise</p></p><p><p>Hum Karte Hain Yaar</p></p><p><p>Abki Baar Tarika Hum Batayenge</p></p><p><p>Tarika Hum Batayenge</p></p><p><p>Kaise Dushman Pe</p></p><p><p>Hum Marte Hain Yaar</p></p><p><p>Abki Baar Tarika Hum Batayenge</p></p><p><p>Tarika Hum Batayenge</p></p><p><p>Yaar Karde Jo Ishaara</p></p><p><p>Ishaara</p></p><p><p>Dil Main De Doon Dobara</p></p><p><p>Dobara</p></p><p><p>Yaar Karde Jo Ishaara</p></p><p><p>Dil Main De Doon Dobara</p></p><p><p>Pyar Ka Nasha</p></p><p><p>Aisa Hai Chadha</p></p><p><p>Hoke Yoon Fida</p></p><p><p>Dushman Gale Lag Jaaye</p></p><p><p>Jhoome Jo Pathaan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>Jhoome Jo Pathan Meri Jaan</p></p><p><p>Mehfil Hi Loot Jaaye</p></p><p><p>Dede Jo Zubaan Meri Jaan</p></p><p><p>Uspe Mar Mit Jaaye</p></p><p><p>&nbsp;</p></p>",
+    "message": "success"
 }
 ```
 
