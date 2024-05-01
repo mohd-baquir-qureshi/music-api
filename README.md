@@ -1,6 +1,10 @@
 
 # Music API (Free Search & Stream)
 
+## Deprecation Notice
+---
+###### **NOTE:** We regret to inform you that the current version of Music API will be deprecated as of 13th May 2024.
+ ---
 
 This is a free unofficial API to Search and Stream High Quality (320kbps) music from popular music streaming engines without any restrictions.
 
