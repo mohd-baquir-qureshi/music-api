@@ -1,9 +1,9 @@
 
 # Music API (Free Search & Stream)
 
-## Update (6th Jan 2025)
+## Update (8th June 2025)
 ---
-###### Released web music player for testing https://acromusic.pages.dev. It will be removed after testing is completed.
+###### The web music player released in January 2025 at https://acromusic.pages.dev has completed its testing phase and is now deprecated, thank you for trying it out and being part of its journey.
  ---
 
 This is a free unofficial API to Search and Stream High Quality (320kbps) music from popular music streaming engines without any restrictions.
